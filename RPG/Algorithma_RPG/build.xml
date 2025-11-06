@@ -10,6 +10,17 @@
 <project name="Algorithma_RPG" default="default" basedir=".">
     <description>Builds, tests, and runs the project Algorithma_RPG.</description>
     <import file="nbproject/build-impl.xml"/>
+    
+    <target name="run" depends="jar" description="Run JAR in External CMD with UTF-8">
+        <echo>Executando JAR em: ${dist.jar}</echo>
+        <exec executable="cmd" spawn="true">
+            <arg value="/c"/>
+            <arg value="start"/>
+            <arg value="cmd.exe"/>
+            <arg value="/k"/>
+            <arg value="chcp 65001 &amp;&amp; java -jar &quot;${dist.jar}&quot;"/>
+        </exec>
+    </target>
     <!--
 
     There exist several targets which are by default empty and which can be 
@@ -57,12 +68,6 @@
       test-report:              JUnit report generation
 
     An example of overriding the target for project execution could look like this:
-
-        <target name="run" depends="Algorithma_RPG-impl.jar">
-            <exec dir="bin" executable="launcher.exe">
-                <arg file="${dist.jar}"/>
-            </exec>
-        </target>
 
     Notice that the overridden target depends on the jar target and not only on 
     the compile target as the regular run target does. Again, for a list of available 
