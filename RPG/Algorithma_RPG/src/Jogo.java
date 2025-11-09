@@ -38,6 +38,7 @@ public class Jogo {
                 digitarLinha(linha.toString(), velocidadeMs);
                 linha = new StringBuilder();
             }
+            //break de linha após chegar ao canto do terminal maximo
             linha.append(palavra).append(" ");
         }
 
@@ -50,7 +51,7 @@ public class Jogo {
      
     private static void fala(String texto) throws InterruptedException {
         String textoLimpo = texto.replaceAll("\\n", " ").replaceAll("\\s+", " ").trim();
-        mostrarDialogo(textoLimpo, 80, 15);
+        mostrarDialogo(textoLimpo, 95, 20);
     }
 
 
@@ -71,7 +72,7 @@ public class Jogo {
             As terras de Algorithma são agressivas aos viajantes que buscam uma vida melhor em suas jornadas.
             Talon é um aventureiro que acabou de começar as suas aventuras quando um terrível acontecimento o faz
             ter de ir para a terra de Algorithma. Ele deseja aprender sobre o arcano envolvendo a escola de magia JAVA,
-            mas após um embate ele se vê perdido em meio a ruínas sem lembranças do que ocorreu em sua vida. Ainda se
+            mas após um embate ele se vê perdido em meio a um deserto e sem lembranças do que ocorreu até o presente momento. Ainda se
             lembra de quem é, mas não se recorda de sua jornada até Algorithma ou o porquê está ali. E você vai ajudá-lo
             a se lembrar, repetindo os possíveis passos de Talon pelas terras de Algorithma.
             """);
@@ -92,8 +93,8 @@ public class Jogo {
         
             System.out.println();
             fala("""
-            Você desperta entre as ruínas antigas de Algorithma. A brisa quente toca seu rosto, e uma sensação
-            de confusão domina sua mente. Você quase se lembra de seu nome, mas não de como chegou aqui.
+            Talon desperta em um deserto de Algorithma chamado J.I.T. A brisa quente toca seu rosto, e uma sensação
+            de confusão domina sua mente. Você se lembra de seu nome, mas não de como chegou aqui.
             Ao olhar ao redor, vê sua mochila de aprendiz, seu cajado e uma adaga multiuso. Ao longe, uma
             figura misteriosa se aproxima lentamente...
             """);
@@ -117,7 +118,8 @@ public class Jogo {
             fala("Talon: Qual é sua pergunta?");
             
             while(executando) {
-                fala("Feiticeiro: Qual a saída do terminal na seguinte linha de comando? System.out.println(\"Hello, world!\");");
+                fala("Feiticeiro: Qual a saída do terminal na seguinte linha de comando?");
+                fala("\nSystem.out.println(\"Hello, world!\");");
                     fala("(1) oi??");
                     fala("(2) que??");
                     fala("(1) han??");
@@ -126,16 +128,18 @@ public class Jogo {
                 entrada = input.nextInt();
             
                 if(entrada == 1 || entrada == 2 || entrada == 3) {
-                    fala("Hahahaha! Ora imaginei que eu faria você ficar confuso jovem Talon, irei te explicar melhor agora.");
+                    fala("\n Feiticero: Hahahaha! Ora imaginei que eu faria você ficar confuso jovem Talon, irei te explicar melhor agora.");
                     executando = false;
                 }
                 else if(entrada == 4) {
-                    fala("Ora... você é um espertinho mesmo né? com certeza você realmente não sabe o que falou não é?");
+                    fala("\n Feiticeiro: Ora... você é um espertinho mesmo né? com certeza você realmente não sabe o que falou não é?");
                     fala("Talon: não... ");
+                    fala("Feiticeiro: Foi o que imaginei...");
                     executando = false;
                 }
                 else {
-                fala("Talon, escolha uma das alternativas, boboca!"); 
+                fala("Feiticeiro: Jovem Talon... tens apenas de responder a pergunta, nao inventar firulas!");
+                executando = false;
                 }
             }
             
@@ -228,6 +232,8 @@ public class Jogo {
             // Nota: Este texto não precisa de limpeza, pois já é uma string formatada.
             String texto = "Créditos:\nDiogo Sena - Enzo Oliveira";
             mostrarDialogo(texto, 80, 20);
+            String texto2 = "TADS Senac - 2025";
+            mostrarDialogo(texto2, 80, 20);
 
             System.out.println("\n\n2 - Voltar\n");
             entrada = input.nextInt();
