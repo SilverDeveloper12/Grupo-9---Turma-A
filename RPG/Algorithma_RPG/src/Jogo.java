@@ -1,3 +1,4 @@
+package Main.java;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -7,13 +8,6 @@ public class Jogo {
     // MÉTODOS DE DIÁLOGO RPG
     // =============================
 
-    /**
-     * Exibe um texto formatado, quebrando linhas pela largura e com efeito de digitação.
-     * @param texto A string completa a ser exibida.
-     * @param larguraMaxima O número máximo de colunas antes de quebrar a linha.
-     * @param velocidadeMs O tempo em milissegundos entre cada caractere.
-     */
-   
     private static void digitarLinha(String texto, int velocidadeMs) throws InterruptedException {
         for (char c : texto.toCharArray()) {
             System.out.print(c);
@@ -42,7 +36,7 @@ public class Jogo {
             linha.append(palavra).append(" ");
         }
 
-        // Digita a última linha que sobrou
+        // Digita a última linha que sobrous
         if (linha.length() > 0) {
             digitarLinha(linha.toString(), velocidadeMs);
             System.out.println();
@@ -54,7 +48,14 @@ public class Jogo {
         mostrarDialogo(textoLimpo, 95, 20);
     }
 
-
+    /**
+     * Exibe um texto formatado, quebrando linhas pela largura e com efeito de digitação.
+     * @param texto A string completa a ser exibida.
+     * @param larguraMaxima O número máximo de colunas antes de quebrar a linha.
+     * @param velocidadeMs O tempo em milissegundos entre cada caractere.
+     */
+   
+    
     // =============================
     // CENAS DO JOGO
     // =============================
@@ -74,7 +75,7 @@ public class Jogo {
             ter de ir para a terra de Algorithma. Ele deseja aprender sobre o arcano envolvendo a escola de magia JAVA,
             mas após um embate ele se vê perdido em meio a um deserto e sem lembranças do que ocorreu até o presente momento. Ainda se
             lembra de quem é, mas não se recorda de sua jornada até Algorithma ou o porquê está ali. E você vai ajudá-lo
-            a se lembrar, repetindo os possíveis passos de Talon pelas terras de Algorithma.
+            a se lembrar, o objetivo de Talon é voltar para casa..
             """);
             
             System.out.println("\n\n2 - Voltar\n");
@@ -95,8 +96,14 @@ public class Jogo {
             fala("""
             Talon desperta em um deserto de Algorithma chamado J.I.T. A brisa quente toca seu rosto, e uma sensação
             de confusão domina sua mente. Você se lembra de seu nome, mas não de como chegou aqui.
-            Ao olhar ao redor, vê sua mochila de aprendiz, seu cajado e uma adaga multiuso. Ao longe, uma
-            figura misteriosa se aproxima lentamente...
+            Ao olhar ao redor, vê sua mochila de aprendiz, seu cajado e uma adaga multiuso.
+            """);
+            
+            fala("""
+            De repente uma figura misteriosa aparece ao horizonte e Talon fica alerta, ele se arma com a adaga para se defender 
+            da possível ameaça, ao se aproximar, a figura começa a tomar a forma de um homem alto que parece ser mais velho, 
+            aos poucos Talon vê mais detalhes do homem que se aproxima, aparentemente algo como um feiticeiro viajante que por algum motivo o conforta, 
+            ele também é um feiticeiro.
             """);
             
             fala("Ao se aproximar o feiticeiro fala um trocadilho para Talon:");
@@ -198,7 +205,7 @@ public class Jogo {
             fala("Talon: eu preciso me lembrar o que aconteceu comigo! estou com medo doque posso ter feito e acabado nessa situação!");
             
             fala("""
-                 Feiticeiro: acima de tudo você é um aventureiro que faz o certo não é? então o seu passado virá a tona dependendo do quanto você quer se aventurar meu jovem, explore e tente novas formas.
+                  Feiticeiro: acima de tudo você é um aventureiro que faz o certo não é? então o seu passado virá a tona dependendo do quanto você quer se aventurar meu jovem, explore e tente novas formas.
                  """);
             
             fala("Talon: e o que eu preciso pra começar?");
@@ -251,6 +258,13 @@ public class Jogo {
         boolean executando = true;
         
         do {
+            System.out.println("""
+                  ******    *          ******     *******   *******  ********   *********   *    *
+                  *    *    *         *          *       *  *     *     *           *       *    *
+                  ******    *         *   ****   *       *  *******     *           *       ****** 
+                  *    *    *         *      *   *       *  *  *        *           *       *    *
+                  *    *    *******    *******    *******   *    *   *******        *       *    *
+                 """);
             System.out.println("\nDigite a opção desejada: ");
             System.out.println("1 - Enredo");
             System.out.println("2 - Jogar");
