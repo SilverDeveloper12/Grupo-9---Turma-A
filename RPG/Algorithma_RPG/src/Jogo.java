@@ -45,7 +45,7 @@ public class Jogo {
      
     private static void fala(String texto) throws InterruptedException {
         String textoLimpo = texto.replaceAll("\\n", " ").replaceAll("\\s+", " ").trim();
-        mostrarDialogo(textoLimpo, 95, 20);
+        mostrarDialogo(textoLimpo, 95, 15);
     }
 
     /**
@@ -129,7 +129,7 @@ public class Jogo {
                 fala("\nSystem.out.println(\"Hello, world!\");");
                     fala("(1) oi??");
                     fala("(2) que??");
-                    fala("(1) han??");
+                    fala("(3) han??");
                     fala("(4) Hello, world... ué?");
             
                 entrada = input.nextInt();
@@ -179,14 +179,22 @@ public class Jogo {
             fala("""
                  Feiticeiro: De antemão é necessário um Cajado com runas romaji que representam o encantamento do cajado para serem capazes de realizar as ações da língua Java, no seu cajado há runas escrito "Java Developer Kit - Staff IDE", runas simples que servem justamente para realizar os feitiços básicos em Java. 
                  """);
+            fala("""
+                 Talon: Só um momento, por que o senhor está me ajudando? acabamos de nos conhecer...
+                 """);
+            fala("""
+                 Feiticeiro: Eu não tenho motivos, apenas percebi que um jovem feiticeiro
+                 como eu já fui antes precisava de ajuda, agora, deseja que eu volte a 
+                 falar dos feitiços em Java?
+                 """);
             
-            fala("Talon: entendo, mas como eu canalizo esses feitiços?");
+            fala("Talon: sou muito grato, sim pode continuar, mas como eu canalizo esses feitiços?");
             
             fala("""
                  Feiticeiro: Ao pegar seu cajado, tua alma se conecta com o encantamento, você se sente como se fora de seu corpo e ao mesmo tempo vivendo o aqui e agora, e assim que se conecta com teu cajado você entra em fase de "Coding", que seria algo como o momento em que as palavras de java juntas fariam sentido para resolver o seu problema, no caso, realizar um feitiço.
                  """);
             
-            fala("Talon: assim como aquilo que você me perguntou quando nos conhecemos?");
+            fala("Talon: assim como aquilo que você me perguntou agora a pouco?");
             
             fala("""
                  Feiticeiro: Exatamente, e Talon, por exemplo aquele feitiço é simplesmente para deixar claro ao feiticeiro que está usando do Java que está tudo certo e ele consegue se comunicar na língua dos deuses.
@@ -225,6 +233,65 @@ public class Jogo {
             
             fala("Por fim ele volta ao presente, e se lembra de algumas coisas em Java.");
             
+            fala("""
+                 Porem, ao olhar aos seus arredores, o feticeiro misterioso que o ajudou a se recordar
+                 simplesmente sumiu sem deixar rastros...
+                 """);
+            fala("A primeira coisa que Talon pensa, é de como chegar a taverna.");
+            
+            fala("""
+                 Ao caminhar pelo deserto usando o som dos ventos batendo nas dunas como
+                 um guia, ele ouve os ventos se acalmarem e baterem contra objetos resistentes,
+                 Talon tem certeza que é uma vila, mas para garantir que não vai se perder
+                 decide olhar sua bússola, que bizarramente tem uma marcação para o Norte.
+                 """);
+            executando = true;
+            
+            while(executando){
+                fala("Talon: Devo ir para qual direção?");
+                fala("\n(1)Norte\n(2)Leste(3)Oeste\n(Sul)");
+                    fala("(1) Norte");
+                    fala("(2) Leste");
+                    fala("(3) Oeste");
+                    fala("(4) Sul");
+            
+                entrada = input.nextInt();
+            
+                if(entrada == 1){
+                    fala("\n Talon: Bom, era a única opção óbvia não é...");
+                    executando = false;
+                }
+                else if(entrada == 2 || entrada == 3 || entrada == 4) {
+                    fala("\n Talon: Tem algo me dizendo que estão tentando me confundir...");
+                    do{
+                    fala("Talon: Devo ir para qual direção?");
+                    fala("\n(1)Norte\n (2)Leste\n (3)Oeste\n(4)Sul");
+                    fala("(1) Norte");
+                    fala("(2) Leste");
+                    fala("(3) Oeste");
+                    fala("(4) Sul");
+                    entrada = input.nextInt();
+                    if(entrada == 1){
+                        executando = false;
+                    }else if(entrada != 1){
+                    do{    
+                    fala("Talon: Olha cara, só escolhe o norte logo pelo amor de Deus...");
+                    fala("\n(1)Norte\n (2)Leste\n (3)Oeste\n(4)Sul");
+                    fala("(1) Norte");
+                    fala("(2) Leste");
+                    fala("(3) Oeste");
+                    fala("(4) Sul");
+                    entrada = input.nextInt();
+                    if(entrada == 1){
+                        executando = false;
+                    }
+                    }while(entrada != 1);
+                    }
+                    }while(entrada != 1);
+                }
+             
+                
+            }
             
         }
 
