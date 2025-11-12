@@ -259,13 +259,17 @@ public class Jogo {
         
         do {
             System.out.println("""
-                  ******    *          ******     *******   *******  ********   *********   *    *
-                  *    *    *         *          *       *  *     *     *           *       *    *
-                  ******    *         *   ****   *       *  *******     *           *       ****** 
-                  *    *    *         *      *   *       *  *  *        *           *       *    *
-                  *    *    *******    *******    *******   *    *   *******        *       *    *
-                 """);
+                  ******    *          ******     *******   *******  ********   *********   *    *  **      **  ******
+                  *    *    *         *          *       *  *     *     *           *       *    *  * *    * *  *    *
+                  ******    *         *   ****   *       *  *******     *           *       ******  *  *  *  *  ******    
+                  *    *    *         *      *   *       *  *  *        *           *       *    *  *   **   *  *    *
+                  *    *    *******    *******    *******   *    *   *******        *       *    *  *        *  *    *
+                               
+                                                                                                            RETURN TO YOUR PAST                                      
+                                           """);
+            System.out.println(" ");
             System.out.println("\nDigite a opção desejada: ");
+            System.out.println(" ");
             System.out.println("1 - Enredo");
             System.out.println("2 - Jogar");
             System.out.println("3 - Créditos");
