@@ -265,7 +265,7 @@ public class Jogo {
                     fala("\n Talon: Tem algo me dizendo que estão tentando me confundir...");
                     do{
                     fala("Talon: Devo ir para qual direção?");
-                    fala("\n(1)Norte\n (2)Leste\n (3)Oeste\n(4)Sul");
+                    fala("\n(1)Norte\n(2)Leste\n(3)Oeste\n(4)Sul");
                     fala("(1) Norte");
                     fala("(2) Leste");
                     fala("(3) Oeste");
@@ -276,7 +276,7 @@ public class Jogo {
                     }else if(entrada != 1){
                     do{    
                     fala("Talon: Olha cara, só escolhe o norte logo pelo amor de Deus...");
-                    fala("\n(1)Norte\n (2)Leste\n (3)Oeste\n(4)Sul");
+                    fala("\n(1)Norte\n(2)Leste\n(3)Oeste\n(4)Sul");
                     fala("(1) Norte");
                     fala("(2) Leste");
                     fala("(3) Oeste");
