@@ -45,7 +45,7 @@ public class Jogo {
      
     private static void fala(String texto) throws InterruptedException {
         String textoLimpo = texto.replaceAll("\\n", " ").replaceAll("\\s+", " ").trim();
-        mostrarDialogo(textoLimpo, 95, 15);
+        mostrarDialogo(textoLimpo, 95, 27);
     }
 
     /**
@@ -70,12 +70,10 @@ public class Jogo {
         while (true) {
             System.out.println();
             fala("""
-            As terras de Algorithma são agressivas aos viajantes que buscam uma vida melhor em suas jornadas.
-            Talon é um aventureiro que acabou de começar as suas aventuras quando um terrível acontecimento o faz
-            ter de ir para a terra de Algorithma. Ele deseja aprender sobre o arcano envolvendo a escola de magia JAVA,
-            mas após um embate ele se vê perdido em meio a um deserto e sem lembranças do que ocorreu até o presente momento. Ainda se
-            lembra de quem é, mas não se recorda de sua jornada até Algorithma ou o porquê está ali. E você vai ajudá-lo
-            a se lembrar, o objetivo de Talon é voltar para casa..
+                 As terras de Algorithma são agressivas aos viajantes que buscam uma vida melhor em suas jornadas, Talon é um aventureiro que acabou de começar as suas aventuras 
+                 quando um terrível acontecimento o faz ter de ir para a terra de Algorithma, ele deseja aprender sobre o arcano envolvendo a escola de magia JAVA, mas após 
+                 um embate ele se vê perdido em meio a ruínas sem lembranças doque ocorreu em sua vida, ainda se lembra de quem é mas não se recorda de sua jornada até Algorithma 
+                 ou o porque está ali, e você vai ajuda-lo a voltar para casa repetindo os possíveis passos de Talon pelas terras de Algorithma.
             """);
             
             System.out.println("\n\n2 - Voltar\n");
@@ -94,7 +92,7 @@ public class Jogo {
         
             System.out.println();
             fala("""
-            Talon desperta em um deserto de Algorithma chamado J.I.T. A brisa quente toca seu rosto, e uma sensação
+            Talon desperta em um deserto de Algorithma chamado "Deserto de J.I.T." A brisa quente toca seu rosto, e uma sensação
             de confusão domina sua mente. Você se lembra de seu nome, mas não de como chegou aqui.
             Ao olhar ao redor, vê sua mochila de aprendiz, seu cajado e uma adaga multiuso.
             """);
@@ -249,7 +247,7 @@ public class Jogo {
             
             while(executando){
                 fala("Talon: Devo ir para qual direção?");
-                fala("\n(1)Norte\n(2)Leste(3)Oeste\n(Sul)");
+                fala("\n(1)Norte\n(2)Leste\n(3)Oeste\n(4)Sul");
                     fala("(1) Norte");
                     fala("(2) Leste");
                     fala("(3) Oeste");
@@ -289,8 +287,175 @@ public class Jogo {
                     }
                     }while(entrada != 1);
                 }
-             
-                
+                fala("""
+                     Talon segue ao norte e acaba encontrando o uma pequena vila localizada logo após
+                     o deserto de J.I.T, estranhamente ao lado de um deserto a vila é muito verde e 
+                     parece ser próspera.
+                     """);
+                fala("""
+                     Ao explorar um pouco Talon nota uma taverna ao horizonte, ele se lembra de seu
+                     flash de memória e reconhece a taverna do sonho que teve, e então ele segue em
+                     direção a taverna determinado em descobrir suas respostas!
+                     """);
+                fala("""
+                     Assim como em toda taverna de um bom RPG, diversos clientes barulhentos estão 
+                     comemorando, diversos aventureiros cantando as garçonetes, jovens sonhadores
+                     contando histórias de suas novas aventuras, musica medieval e 
+                     seniores aventureiros se vangloriando do passado.
+                     """);
+                fala("""
+                     Talon se aproxima lentamente da pequena porta do salão e a abre confuso do
+                     porque sonhou com a taverna, ao entrar na taverna, TODOS FICAM EM SILÊNCIO
+                     E OLHAM FIXADAMENTE NA DIREÇÃO DO NOSSO HERÓI.
+                     """);
+                fala("""
+                     Aqueles que antes tinham expressões alegres, fecharam a cara e começaram
+                     a encarar Talon, ele confuso e desconfortável anda em direção ao bar, onde
+                     o Bartender o atende e diz o seguinte:
+                     """);
+                fala("""
+                     Bartender: Você tem muita coragem de dar as caras aqui novamente meu jovem...
+                     """);
+                fala("""
+                     De maneira constrangedora, Talon o responde com a voz baixa...
+                     """);
+                fala("""
+                     Talon: eu poderia dizer que não me recordo do que posso ter feito, porque não me recordo
+                     ... mas por sua expressão e a reação dos clientes... não parece que foi coisa boa... né?
+                     """);
+                fala("""
+                     Bartender: Meu rapaz, suas desculpas ficam para seu julgamento, porque dizer que não se 
+                     lembra de roubar o tesouro da cidade e o restante do ouro do banco, é muita falta de 
+                     vergonha na cara...
+                     """);
+                fala("""
+                     Talon se enfurece e aumenta a voz para o bartender.
+                     """);
+                fala("""
+                     Talon: ROUBAR??? EU NÃO ROUBEI NADA EU NÃO SOU LADRÃO!!!
+                     """);
+                fala("""
+                     Ao criar uma cena no bar o restante dos clientes se revoltam e começam
+                     a gritar com Talon
+                     """);
+                fala("""
+                     "COMO VOCÊ OUSA MENTIR DESTE JEITO??? ROUBOU A PEDRA DE PYTHITA ROSA, RARÍSSIMA NA
+                     NATUREZA DE NOSSA CIDADE!!! ELA NOS TRAZIA AS BENÇÃOS DO DEUS PYTHON!!!"
+                     """);
+                fala("""
+                     Talon confuso com este nome o recita em tom baixo...
+                     """);
+                fala("""
+                     Talon: Pedra de Pythita ros-
+                     """);
+                fala("""
+                     Ao falar estas palavras, mais uma vez passa por sua mente memórias das visões
+                     que ele teve ao conversar com o feiticeiro, ele se lembra de uma das figuras
+                     misteriosas de sua visão e vê um Goblin segurando o que parece ser a tal Pedra
+                     de Pythita Rosa, o mesmo estava na noite onde Talon perdeu a memória e parece que 
+                     ele tem ligação com o resto das figuras que estavam na visão de Talon.
+                     """);
+                fala("""
+                     Talon: EU SEI QUEM ROUBOU O TESOURO DA SUA CIDADE! FOI UM GOBLIN MUITO HORRIVEL
+                     E ESQUISITO! ELE ESTAVA NA NOITE QUE PERDI A MEMÓRIA! EU JURO QUE NÃO FUI EU QUEM ROUBOU
+                     O TESOURO DA CIDADE DE VOCÊS!!!
+                     """);
+                fala("""
+                     "FORASTEIRO VOCÊ ACHA QUE VAMOS ACREDITAR EM VOCÊ?!?"
+                     "QUEM VOCÊ PENSA QUE É?"          
+                     "VAMOS PEGAR ELE!"
+                     "LINCHEM-NO!"
+                                "PEGUEM ELE!"
+                                                "SUMA DAQUI PRAGA!"
+                     """);
+                fala("""
+                     Bartender: SE ACALMEM! lembrem-se de minha regra de não agressão!
+                     """);
+                fala("""
+                     O bartender então olha para Talon e nota a sinceridade em seu olhar...
+                     """);
+                fala("""
+                     Bartender: hahahaha! Goblin é? hmm, quem diria que depois de se juntar a 
+                     aqueles cultistas ele voltaria para cidade...
+                     """);
+                fala("""
+                     Talon: Cultistas?
+                     """);
+                fala("""
+                     Bartender: não sei ao certo quem são ou quem seguem, mas sei que a
+                     antiga praga da cidade, este goblin, fez parte do bando deles, o maldito
+                     se chama "Monzlevis", e assola nossa cidade desde que eu era uma criança.
+                     """);
+                fala("""
+                     Talon: Eu sou um feiticeiro senhor bartender, eu tive uma visão deste
+                     Goblin com um item rosa em sua mão! creio que era a pedra de Pythita Rosa,
+                     eu gostaria de ir atrás dele para recuperar a pedra e provar minha inocência!
+                     """);
+                fala("""
+                     Bartender: Vejo veracidade em suas palavras rapaz, mas qual seu objetivo?
+                     """);
+                fala("""
+                     Talon: Não me lembro ao certo... mas sei que devo voltar pra casa... eu não
+                     me lembro o porque mas sei que esqueci de algo muito importante...
+                     """);
+                fala("""
+                     Bartender: Bom... se serve de consolo, caso pegue Monzlevis, eu gostaria que
+                     aceitasse esses fragmentos de RubyOnRail, eles podem ser úteis para um feiticeiro.
+                     """);
+                fala("""
+                     Talon: O senhor sabe me dizer onde Monzlevis reside?
+                     """);
+                fala("""
+                     Bartender: Em uma caverna próxima daqui, não muito longe, ela estava abandonada
+                     mas tenho certeza que Monzlevis voltou para la com seus dois capangas, tome cuidado
+                     meu jovem, pode ser perigoso...
+                     """);
+                fala("""
+                     Talon: Vai ficar tudo bem meu jovem senhor, eu sou duro na queda!!!
+                     """);
+                fala("""
+                     Bartender: HAHAHA! Bem, siga em direção a montanha Golang e você verá a caverna
+                     de Monzlevis, enquanto isso vou chamar o prefeito da vila para recebe-lo caso derrote
+                     o maldito Goblin!
+                     """);
+                fala("""
+                     Então Talon segue para a caverna, mas antes ele deseja testar suas habilidades com Java.
+                     """);
+                fala("""
+                     Talon: Vamo lá! eu sei que posso usar estrutura de repetição para clonar 5 desta mesma pedra!
+                     """);
+                fala("""
+                     𝓔𝓧𝓟𝓐𝓝𝓓𝓔 𝓐𝓝𝓘𝓜𝓤𝓜 𝓣𝓤𝓤𝓜: 𝓒𝓞𝓓𝓘𝓝𝓖 //expanda tua mente com: CODING.
+                     """);
+ 
+                executando = true;
+                while(executando){
+                    fala("Qual destas estruturas vós tens de usar para repetir vezes já determinadas?");
+                    fala("\n(1)For\n(2)While\n(3)Do-While\n(4)If");
+                    
+                    entrada = input.nextInt();
+                    if(entrada == 1){
+                        fala("Como serás a estrutura de repetição?");
+                        fala("\n(1) for(int i=1; i<6; i++)\n(2) for(int i=0; i<= 5; i++);\n(3) for(int i=5; i>=5; i--);\n(4) for(int i=2; i>1; i++);");
+                        int entrada2 = input.nextInt();
+                        if(entrada2 == 1){
+                            executando = false;
+                        }
+                            
+                    }else{
+                        do{
+                            fala("""
+                             Java: Feitiço com instruções erradas, tente novamente...
+                             """);
+                            fala("-----------------------------------------------------");
+                            fala("Qual destas estruturas vós tens de usar para repetir vezes já determinadas?");
+                            fala("\n(1)For\n(2)While\n(3)Do-While\n(4)If");
+                            entrada = input.nextInt();
+                            
+                        }while(entrada != 1);
+                    }
+                                        
+                }
             }
             
         }
@@ -326,11 +491,11 @@ public class Jogo {
         
         do {
             System.out.println("""
-                  ******    *          ******     *******   *******  ********   *********   *    *  **      **  ******
-                  *    *    *         *          *       *  *     *     *           *       *    *  * *    * *  *    *
-                  ******    *         *   ****   *       *  *******     *           *       ******  *  *  *  *  ******    
-                  *    *    *         *      *   *       *  *  *        *           *       *    *  *   **   *  *    *
-                  *    *    *******    *******    *******   *    *   *******        *       *    *  *        *  *    *
+                  ******    *          ******     *******    *******   *******    *********    *    *    **      **    ******
+                  *    *    *         *          *       *   *     *      *           *        *    *    * *    * *    *    *
+                  ******    *         *   ****   *       *   *******      *           *        ******    *  *  *  *    ******    
+                  *    *    *         *      *   *       *   *  *         *           *        *    *    *   **   *    *    *
+                  *    *    *******    *******    *******    *    *    *******        *        *    *    *        *    *    *
                                
                                                                                                             RETURN TO YOUR PAST                                      
                                            """);
