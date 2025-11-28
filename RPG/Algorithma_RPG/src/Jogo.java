@@ -7,7 +7,7 @@ public class Jogo {
     // =============================
     // MÉTODOS DE DIÁLOGO RPG
     // =============================
-
+    private static String user;
     private static void digitarLinha(String texto, int velocidadeMs) throws InterruptedException {
         for (char c : texto.toCharArray()) {
             System.out.print(c);
@@ -15,7 +15,12 @@ public class Jogo {
         }
         System.out.println(); // Quebra a linha no final
     }
-    
+    public static String pressioneParaAvancar(String tecla){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Pressione qualquer tecla para avançar: ");
+        tecla = sc.next();
+        return tecla;
+    }
     
     /**
      * Helper que simula a digitação de uma única linha, caractere por caractere.
@@ -109,7 +114,7 @@ public class Jogo {
             fala("Feiticeiro: Parece que vós deseja passar gordura animal em mim, não sou sua presa sabia?");
             
             fala("Talon: o que? quem é você?");
-            
+            pressioneParaAvancar(user);
             fala("""
                 Feiticeiro: Entendo que ao conhecer uma pessoa pela primeira vez, nosso instinto é saber quem ela é, mas é mal educado não se apresentar primeiro para os mais velhos...
                  """);
@@ -117,7 +122,7 @@ public class Jogo {
             fala("""
                  Talon: Ah! mil perdões, Meu nome é... Ta...lon? TALON! meu nome é Talon!
                  """);
-            
+
             fala("Feiticeiro: um nome formidável, mas antes de me apresentar eu vos tenho uma pergunta jovem Talon.");
                  
             fala("Talon: Qual é sua pergunta?");
@@ -163,7 +168,7 @@ public class Jogo {
             fala("Feiticeiro: Jovem Talon, as coisas que pra nós são confusas à primeira vista se tornam parte de nós ao convivermos com elas...");
             
             fala("Talon: como assim?");
-            
+            pressioneParaAvancar(user);
             fala("""
                  Feiticeiro: Se você busca respostas, você precisa se esforçar para entender isto que te falei, você sabe que com Java você pode  lembrar do que aconteceu e porque está aqui, o que estou fazendo por você é apenas te auxiliando pro seu próximo passo.
                  """);
@@ -193,7 +198,7 @@ public class Jogo {
                  """);
             
             fala("Talon: assim como aquilo que você me perguntou agora a pouco?");
-            
+            pressioneParaAvancar(user);
             fala("""
                  Feiticeiro: Exatamente, e Talon, por exemplo aquele feitiço é simplesmente para deixar claro ao feiticeiro que está usando do Java que está tudo certo e ele consegue se comunicar na língua dos deuses.
                  """);
@@ -221,7 +226,7 @@ public class Jogo {
                  """);
             
             fala("Ao segurar a jóia um tipo de apagão acontece na mente de Talon e ele se lembra de flashes em sua mente.");
-            
+            pressioneParaAvancar(user);
             fala("""
                  Primeiro o flash de uma cama, logo em seguida o flash de um horizonte e por fim, dois seres impossíveis de discernir suas formas e rostos segurando itens brilhantes. """);
             
@@ -236,7 +241,7 @@ public class Jogo {
                  simplesmente sumiu sem deixar rastros...
                  """);
             fala("A primeira coisa que Talon pensa, é de como chegar a taverna.");
-            
+            pressioneParaAvancar(user);
             fala("""
                  Ao caminhar pelo deserto usando o som dos ventos batendo nas dunas como
                  um guia, ele ouve os ventos se acalmarem e baterem contra objetos resistentes,
