@@ -2,6 +2,10 @@
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+//Integrantes:
+//Enzo de Oliveira Conceicao da Silva
+//Diogo sena
+
 public class Jogo {
 
     // =============================
