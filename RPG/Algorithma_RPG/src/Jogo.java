@@ -17,7 +17,7 @@ public class Jogo {
     }
     public static String pressioneParaAvancar(String tecla){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Pressione qualquer tecla para avançar: ");
+        System.out.println("Pressione S para avançar: ");
         tecla = sc.next();
         return tecla;
     }
@@ -302,6 +302,7 @@ public class Jogo {
                      flash de memória e reconhece a taverna do sonho que teve, e então ele segue em
                      direção a taverna determinado em descobrir suas respostas!
                      """);
+                pressioneParaAvancar(user);
                 fala("""
                      Assim como em toda taverna de um bom RPG, diversos clientes barulhentos estão 
                      comemorando, diversos aventureiros cantando as garçonetes, jovens sonhadores
@@ -328,6 +329,7 @@ public class Jogo {
                      Talon: eu poderia dizer que não me recordo do que posso ter feito, porque não me recordo
                      ... mas por sua expressão e a reação dos clientes... não parece que foi coisa boa... né?
                      """);
+                pressioneParaAvancar(user);
                 fala("""
                      Bartender: Meu rapaz, suas desculpas ficam para seu julgamento, porque dizer que não se 
                      lembra de roubar o tesouro da cidade e o restante do ouro do banco, é muita falta de 
@@ -360,6 +362,7 @@ public class Jogo {
                      de Pythita Rosa, o mesmo estava na noite onde Talon perdeu a memória e parece que 
                      ele tem ligação com o resto das figuras que estavam na visão de Talon.
                      """);
+                pressioneParaAvancar(user);
                 fala("""
                      Talon: EU SEI QUEM ROUBOU O TESOURO DA SUA CIDADE! FOI UM GOBLIN MUITO HORRIVEL
                      E ESQUISITO! ELE ESTAVA NA NOITE QUE PERDI A MEMÓRIA! EU JURO QUE NÃO FUI EU QUEM ROUBOU
@@ -410,6 +413,7 @@ public class Jogo {
                 fala("""
                      Talon: O senhor sabe me dizer onde Monzlevis reside?
                      """);
+                pressioneParaAvancar(user);
                 fala("""
                      Bartender: Em uma caverna próxima daqui, não muito longe, ela estava abandonada
                      mas tenho certeza que Monzlevis voltou para la com seus dois capangas, tome cuidado
@@ -461,6 +465,86 @@ public class Jogo {
                     }
                                         
                 }
+                fala("""
+                     Após verificar que poderia enfrentar Monleviz, Talon vai de encontro a sua
+                     caverna, ele derrota os dois capangas de Monzlevis e encontra o goblin 
+                     segurando a pedra de Pythita Rosa
+                     """);
+                fala("""
+                     Monzlevis: Demonio do tempo... eu diria que não nos vemos a muito... tempo? AHAHAHAHAHAHA
+                     """);
+                fala("""
+                     A piada foi tao ruim, que nem eu, o narrador, quero comentar sobre ela...
+                     """);
+                fala("""
+                     Talon então desfere um ataque certeiro usando a tecnica que aprendeu de repetição, dessa vez
+                     ele clonou varios tiros magicos ao mesmo tempo
+                     """);
+                fala("""
+                     Ao recuperar a pedra de Pythita rosa ele tem outra visão e se apressa para a vila
+                     dar a noticia de monzlevis
+                     """);
+                fala("""
+                     Ao chegar todos comemoram que Talon recuperou o tesouro da cidade e fazem uma festa
+                     """);
+                fala("""
+                     Então o bartender entrega os fragmentos de RubyOnRail e eles se unificam na mão de talon
+                     que o faz lembrar de uma vez por todas o caminho pra casa.
+                     """);
+                pressioneParaAvancar(user);
+                fala("""
+                     ele pega a primeira carruagem para sua cidade e vai em direção a sua casa, ao entrar 
+                     em um dos comodos ele vê sua avó no leito de morte, ela havia sido enfeitiçada pelos
+                     cultistas de java e estava no final da data da maldição.
+                     """);
+                fala("""
+                     Talon: Vovó! eu consigo te salvar com os itens!
+                     """);
+                fala("""
+                     Avó de Talon: precisa não.
+                     """);
+                fala("""
+                     daí ela morre
+                     """);
+                pressioneParaAvancar(user);
+                fala("""
+                     Ai Talon une os itens e a gente descobre que o nome dele é Talogi Ji'Kaza
+                     """);
+                fala("""
+                     Talon faz um feito unico e consegue se tornar o mago mais poderoso do mundo
+                     mas pra que os cultistas nao o persigam ele sai correndo e se esconde num loop
+                     temporal eterno
+                     """);
+                fala("""
+                     Ai ele cria um loop temporal lendario que faz com que ele volte no tempo
+                     antes de juntar os itens para que ele crie um poder magico magnifico e derrote
+                     os cultistas de Java agora o Talon prefere C# sei la
+                     """);
+                fala("""
+                     Salabimbimbim ele volta no tempo e ve ele mesmo jovem no deserto morrendo
+                     mas ele nao deixa ele mesmo morrer senao nem ia ter jogo
+                     """);
+                fala("""
+                     e no final ele fala um negocio tipo filme do Michael Bay que é a mesma
+                     frase que o feiticeiro velho fala pra ele no começo do jogo.
+                     """);
+                fala("""
+                     Parece que vós deseja passar gordura animal em mim, não sou sua presa sabia?
+                     """);
+                fala("""
+                     What I've done
+                     I'll face myself to cross out what I've become
+                     Erase myself and let go of what I've done
+                     
+                     For what I've done, I start again
+                     And whatever pain may come, today this ends
+                     I'm forgiving what I've done!
+                     """);
+                fala("""
+                     Obrigado por jogar!
+                     """);
+                pressioneParaAvancar(user);
+                
             }
             
         }
